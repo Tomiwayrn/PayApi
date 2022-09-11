@@ -13,7 +13,7 @@ import React from 'react';
 
 function App() {
   
-  const [modal, setModal] = React.useState(false);
+ 
   
 
   return (
