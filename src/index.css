@@ -1,0 +1,733 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Public+Sans:wght@100;300;400;500;600;700;800;900&display=swap");
+
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
+ background: #eef2f7 url(./assets/shared/bg-pattern-circle.svg) no-repeat ;
+  box-sizing: border-box;
+  background-size: 100%;
+  letter-spacing: 1px;
+  color: #202a33;
+  
+
+  
+}
+
+h1 h2 {
+  font-family: "DM Serif Display", serif;
+}
+
+.sub-header {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+}
+
+
+button{
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  transition: .5s ease-in;
+  letter-spacing: 1.2px;
+ }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: .9rem;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.title {
+  color: rgb(170, 170, 255);
+  padding-bottom: 5px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+
+
+
+button:hover {
+  opacity: 0.5;
+  transition: .6s ease-in;
+  cursor: pointer;
+ 
+} 
+
+
+nav {
+  display: flex;
+  top: 0%;
+  align-items: center;
+  justify-content: space-between;
+ 
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 10;
+  background: transparent;
+  margin-bottom: 50px;
+  padding: 10px 20px; 
+  
+  
+}
+
+nav > img {
+  width: 100px;
+}
+
+
+.nav-btn{
+  position: relative;
+  top: 0%;
+  right: 0%;
+  z-index: 30;
+
+}
+
+
+
+.navlinks{
+  position: absolute;
+  margin-top: 25rem;
+  display: none; 
+  animation: new .6s ease;
+  overflow: hidden;
+  padding-top: 100vh;
+  padding-bottom: 100vh;
+  width: 70vw;
+  margin-left: 30vw;
+  animation: .5s new ease-in;
+  background: #202a33;
+  z-index: 10;
+  color: white;
+  
+}
+
+.navlinks > ul  {
+  list-style-type: none;
+  display: flex;
+  padding: 5px 0px;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1.1rem;
+ width: 75%;
+  margin: 0 auto;
+  border-top: 1px solid white;
+   
+}
+
+.schedule {
+  margin-top: 30px;
+  width: 100%;
+}
+
+
+.home-main {
+  padding: 0 15%;
+  text-align: center;
+}
+
+.home .phone {
+  width: 60%;
+  max-width: 260px;
+}
+
+.home .easy div {
+
+  margin-bottom: 60px;
+}
+
+.home a {
+  font-size: .9rem;
+  color: blue;
+  text-decoration: underline;
+}
+
+
+.easy {
+  padding:  0 2rem;
+  text-align: center;
+}
+
+.easy .one img {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+.easy > div:not(1) > img {
+  width: 50%;
+}
+
+.easy h1 {
+  font-size: 2rem;
+}
+
+.easy h2 {
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+form input {
+  padding: 14px;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0px 5px  20px rgba(78, 77, 77, .3);
+}
+
+form button, .schedule {
+  background: #BA4270;
+  color: white;
+font-size: .7rem;
+padding: 14px;
+border-radius: 20px;
+
+
+  
+}
+
+form button:active {
+  opacity: 1;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.4);
+}
+
+.socio, footer {
+  background: #202a33 url(./assets/shared/bg-pattern-circle.svg) no-repeat top;
+  background-size: 100%;
+  background-position: 60% -20rem;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.socio .svgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.socio p {
+  opacity: .8;
+}
+
+.about-btn{
+   border: 1px solid white;
+   padding: 10px 20px;
+   border-radius: 20px;
+}
+
+.about-btn:hover {
+  background: white;
+  color: black;
+  opacity: 1;
+}
+
+ li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+ }
+
+ .pricing {
+  text-align: center;
+ }
+
+ .price {
+  padding:  0 3rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 1rem;
+ }
+
+.price .container {
+  width: 100%;
+  padding: 0 40%;
+  margin: 0 auto;
+  text-align: center; 
+  border-top: 1px solid #202a33;
+  border-bottom: 1px solid #202a33;
+}
+
+.price button, .contact .container form button {
+  border: 1px solid #202a33 ;
+  width: 150px;
+  padding: 12px  0;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+
+.price button:hover,
+.contact .container form button:hover
+{
+  background: #202a33;
+  color: white;
+  opacity: 1;
+}
+
+.price h2 {
+  color: #BA4270;
+}
+
+.contact  {
+  padding: 0 5.4rem;
+  text-align: center;
+}
+
+.contact form {
+  text-align: left;
+}
+
+.contact .two {
+  text-align: center;
+}
+
+.contact .svgs {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  height: 12rem;
+}
+
+.contact .container form >input, textarea {
+  background: none;
+  border: none;
+  width: 100%;
+  box-shadow: none;
+  border-bottom: 1px solid #202a33;
+  border-radius: 0;
+  padding: .4rem 0;
+}
+
+
+
+textarea:focus{
+  outline: none;
+}
+
+.contact textarea {
+  padding: 2rem 0;
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+.contact .container > form button {
+  background: none;
+  color: #202a33;
+}
+
+
+.spin {
+  animation: rotate 2s liner infinite; 
+  z-index: 2;
+ width: 50%;
+ height: 50%;
+ margin: 0 auto;
+
+}
+
+.path {
+  stroke: #202a33;
+  stroke-linecap: round;
+ animation: dash 1s ease-in-out infinite; 
+}
+
+
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 150;
+    stroke-dashoffset: 0;
+  }
+
+  50% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -35;
+  }
+
+  100% {
+    stroke-dasharray: 90, 150;
+    stroke-dashoffset: -124;
+  }
+}
+
+
+
+#upto {
+  width: auto;
+  margin-right: 15px;
+}
+
+.about {
+  
+  text-align: center;
+}
+
+.about section h1 {
+  padding: 0 4rem;
+}
+
+.about .container {
+  padding: 0 2rem;
+  margin-bottom: 3rem;
+}
+
+.about-img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.team-info {
+  border-top: 1px solid #202a33;
+  border-bottom: 1px solid #202a33;
+  margin: 1rem 3rem;
+
+}
+
+.team-info h4 {
+  font-weight: 400;
+  margin: .6rem;
+}
+
+.team-info h1 {
+  color: #BA4270;
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+.icons  {
+  display: flex;
+  width: 100px;
+  margin: 0 auto;
+  justify-content: space-between;
+
+} 
+
+footer {
+  margin-top: 1rem;
+}
+
+
+@keyframes new {
+  0% {
+    transform: translate(100%);
+  }
+ 
+  100%{
+  transform: translate(0%);
+  }
+}
+
+@media screen and (min-width:768px) {
+  
+    
+  nav {
+    box-sizing: border-box;
+   display: grid;
+   grid-template-columns: 10% 1fr ;
+   align-items: center;
+   width: 100%;
+   box-sizing: border-box;
+  }
+
+  .navlinks{
+      position: relative;
+      top: 0%;
+      margin: 0;
+      height: auto;
+     display: flex;
+     width: 100%;
+  display: grid;
+  grid-template-columns: 1fr  1fr ;   
+      padding: 0 10px;
+      margin: 0;
+      height: 100%;
+      padding-top: 10px;
+      width: auto;
+      margin-right: 0;
+      box-shadow: none;
+      background: none;
+      color:#202a33;
+      align-items: center;
+      
+    } 
+    
+   
+    .schedule {
+      margin-top: 0;
+      top: 1%;
+      right: 3%;
+      grid-column: 2;
+      position: absolute;
+      width: 140px;
+    }
+    
+    .navlinks > ul  {
+    
+      flex-direction: row;
+      justify-content: left;
+      
+      gap: 30px;
+      padding: 0; 
+     box-shadow: none;
+      border-top: none;
+      
+    }
+  
+    .navlinks > ul > li{
+    padding-bottom: 20px;
+        margin: 0;
+        margin-left: 10px;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+
+  .home-main {
+    position: relative;
+    height: 50vh;
+    width: 70%;
+  }
+
+  .home-main .phone {
+    position: absolute;
+    top: -20%;
+    left: 100%;
+  }
+
+  
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+    
+  }
+
+  .comp-form {
+    max-width: 800px;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+
+
+  form button {
+    margin-left: -40px;
+  }
+
+  .easy {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 4rem;
+    align-items: center;
+  }
+
+  .easy .two {
+    margin-top: 1rem;
+  }
+
+  .socio {
+    margin-top: 2rem;
+  }
+
+  .socio .svgs {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 8rem;
+
+  }
+
+  .socio p {
+    padding: 0 10rem;
+  }
+
+  #stayUp {
+    width: auto;
+    margin-right: 20px ;
+  }
+
+  .icons {
+    width: 100%;
+    align-items: center;
+    grid-column: 4;
+  }
+
+   .icons img {
+    width: 40px;
+  } 
+
+  .pricing {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 5rem 1fr;
+   
+  }
+
+  .pricing > h2 {
+    grid-row: 1;
+    text-align: left;
+    padding-left: 3rem;
+  } 
+
+  .price {
+    grid-row: 2;
+    text-align: left;
+  }
+
+  .price .container {
+    padding: 0;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5rem;
+    text-align: left;
+  }
+
+  .contact .container > form {
+    flex-direction: column;
+        max-width: none;
+        align-items: start;
+        justify-content: start;
+        text-align: left;
+        
+  }
+
+  .contact .container > form button {
+    margin-right: 60%;
+  }
+
+  
+
+  .contact .container > form input {
+    width: 100%;
+  }
+
+  .contact .container > form div {
+    align-items: center;
+    display: flex;
+  }
+
+
+  .contact  .two {
+    justify-self: center;
+    align-self: center;
+    text-align: left;
+  }
+
+  .contact .footer {
+    display: flex;
+    flex-direction: row;
+    gap: 30%;
+    grid-column: 1/3;
+  }
+
+ 
+
+  .team-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+  }
+
+  .team-info div {
+    border-top: 1px solid #202a33;
+    border-bottom: 1px solid #202a33;
+  }
+
+  
+
+  .about .container {
+    display: grid;
+    margin-bottom: 1rem;
+    padding: 0 5rem;
+   text-align: justify;
+    grid-template-columns: 25% 1fr;
+    
+  }
+
+  .about section h1 {
+    padding: 0 30%;
+   
+  }
+
+
+
+
+  
+  
+
+  
+  footer {
+    display: grid;
+    grid-template-columns:14% 27% 1fr 15%;
+    align-items: center;
+
+  }
+
+  footer ul {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 2;
+  } 
+
+  footer .icons img {
+    width: 30px;
+  }
+  
+
+ 
+
+  }
